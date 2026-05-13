@@ -1,3 +1,5 @@
+package arithmetic;
+
 public class Substraction extends Binaryoperation {
 
     public Substraction() { operator = '-'; }

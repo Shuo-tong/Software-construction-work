@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.ArrayList;
 import java.util.Random;
 

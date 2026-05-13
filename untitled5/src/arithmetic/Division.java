@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.Random;
 
 public class Division extends Binaryoperation {

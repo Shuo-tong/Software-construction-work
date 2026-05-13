@@ -1,3 +1,4 @@
+package arithmetic;
 
 public class ExerciseSheet extends Exercise {
 
@@ -19,4 +20,3 @@ public class ExerciseSheet extends Exercise {
         formattedDisplay();
     }
 }
-

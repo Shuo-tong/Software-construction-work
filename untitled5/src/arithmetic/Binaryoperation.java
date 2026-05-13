@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.Random;
 
 public abstract class Binaryoperation {
@@ -28,6 +30,10 @@ public abstract class Binaryoperation {
     public int getRightOperand() { return right_operand; }
     public char getOperator() { return operator; }
     public int getResult() { return value; }
+
+    // 实例变量设置器（供测试使用）
+    public void setLeftOperand(int left)   { left_operand  = left; }
+    public void setRightOperand(int right) { right_operand = right; }
 
     // 覆写 Object.equals()，使 ArrayList.contains() 能正确判断重复
     @Override

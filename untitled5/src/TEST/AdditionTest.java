@@ -10,9 +10,9 @@ class AdditionTest {
     @Test
     void calculate() {
         Addition op = new Addition();
-        op.setLeftOperand(100);
-        op.setRightOperand(0);
-        assertEquals(100, op.calculate());
+        op.setLeftOperand(30);
+        op.setRightOperand(10);
+        assertEquals(40, op.calculate());
     }
 
     @Test

@@ -1,0 +1,20 @@
+当前版本为1.0基础版本，
+代码来自实验资料文件中的模版，并在此基础上补充了“...”处缺失的部分
+
+具体补充说明：
+
+    Book.java
+    新增字段：name(书名)、price(价格)、category(类别)
+    构造方法：Book(String name, double price, int category)
+    Getter：getName()、getPrice()、getCategory()
+    toString() 返回带双引号的书名(如 "Python进阶")，配合 Rental.toString() 拼出 新书"Python进阶"借阅了12天. 的格式
+
+    Rental.java
+    构造方法：Rental(Book book, int daysRented, Student borrower)
+    Getter：getBook()、getDaysRented()、getBorrower()(供 Student.returnedMessage() 中的 aRental.getBook()、aRental.getDaysRented() 调用)
+
+    Student.java
+    构造方法：Student(String name)
+    getName()、getBonus()、addBonus(int delta)(支持原代码的 addBonus(-7) 抵扣)、addRental(Rental rental)(用于添加借阅记录到 rentals 列表)
+
+将在此版本进行代码重构。

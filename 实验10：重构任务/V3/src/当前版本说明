@@ -1,0 +1,10 @@
+当前为V3版本
+
+应用“函数移动”，把罚金计算方法calculateFineAndBonus()从Student移动到Rental：
+
+    Rental.java：
+        新增 public double calculateFineAndBonus()（无参），内部用自身字段 book、daysRented，对借阅者加分通过 getBorrower().addBonus(N) 完成
+    Student.java
+        returnedMessage() 中的 calculateFineAndBonus(aRental) 改为向 aRental 发消息：aRental.calculateFineAndBonus()；将私有方法 calculateFineAndBonus(Rental) 整体删除
+
+将在此版本继续进行代码重构。

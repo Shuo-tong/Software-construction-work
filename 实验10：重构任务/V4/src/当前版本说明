@@ -1,0 +1,29 @@
+当前为V4版本
+
+运用“用多态取代类型码”改造方法calculateFineAndBonus，消除其中的分支语句：
+
+   Book.java
+   改为抽象基类
+   字段 name/price；抽象方法 getFine()、baseFine()、getBonus()、toString()；
+   移除 TEXT_BOOK/REFERENCE/NEW_BOOK 常量及 category 字段
+
+   新增：
+   TextBook.java
+   子类·教材
+   getFine = price*0.001、baseFine = 1、getBonus = 1、toString = 教材"name"
+   Reference.java
+   子类·参考书
+   getFine = price*0.005、baseFine = 1.5、getBonus = 2、toString = 参考书"name"
+   NewBook.java
+   子类·新书
+   getFine = price*0.01、baseFine = 3、getBonus = 3、toString = 新书"name"
+
+   Rental.java
+   彻底去 switch
+   calculateFineAndBonus() 改为单一 if/else；
+   toString() 改为为 book + "借阅了" + days + "天."
+
+   Student.java
+   不变
+
+将在此版本继续进行代码重构。

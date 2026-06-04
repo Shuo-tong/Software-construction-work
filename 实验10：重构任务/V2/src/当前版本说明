@@ -1,0 +1,12 @@
+当前为V2版本
+
+应用"提炼方法"重构 → Student.java：
+
+    returnedMessage() 中的 switch 计算块已被抽出为私有方法 calculateFineAndBonus(Rental aRental)
+    外层方法只保留"遍历借阅 → 累加罚金 → 积分抵扣 → 拼装信息"的高层流程
+
+    同时：
+    1.三个 else 分支由 bonus = 1/2/3; + 末尾统一 addBonus(bonus) 直接改写为 addBonus(1)、addBonus(2)、addBonus(3)；bonus变量声明与末尾的 addBonus(bonus) 一并删除
+    2.以查询取代临时变量 finedAmount,totalAmount直接+=calculateFineAndBonus(aRental)
+
+将在此版本继续进行代码重构。

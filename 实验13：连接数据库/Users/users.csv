@@ -1,0 +1,19 @@
+# userId,password,nickname,score,totalChallenges,totalCorrect
+player1,pw,玩家1,0,1,0
+infouser,pw,信息人,0,0,0
+p2,pw,玩家2,0,1,0
+user1,pw1,昵称1,0,0,0
+alice,abc,小爱,0,0,0
+badans1,pw,错答1,1,1,1
+dupuser,pw1,昵称,0,0,0
+emptyans,pw,空答人,0,1,0
+user2,pw2,user2,0,0,0
+bignum,pw,大数人,0,1,0
+secuser,rightpw,安全人,0,0,0
+difflet,pw,字母难度,0,0,0
+loguser,pw,登出人,0,0,0
+specans,pw,特字人,0,1,0
+menuuser,pw,菜单人,0,0,0
+negans,pw,负数人,0,1,0
+diffuser,pw,难度人,0,0,0
+testuser,pass123,小测,0,0,0
